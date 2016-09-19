@@ -1,0 +1,217 @@
+[
+  {
+    "_id" : "0",
+    "name": "login",
+    "endpoint": "/api/v1/rest/login",
+    "description": "Endpoint to get login and return an authentication token",
+    "required-token": false,
+    "parameters": ["username", "password"],
+    "method": "get",
+    "content-type": "application/json",
+    "success-messages": [
+      {},
+      {}
+    ],
+    "error-messages" : [
+      {},
+      {}
+    ]
+  },
+  {
+    "_id" : "1",
+    "name": "logout",
+    "endpoint": "/api/v1/rest/logout",
+    "description": "Endpoint to get logout and then the token is destoyed",
+    "required_token": true,
+    "parameters": [],
+    "method": "post",
+    "content-type": "application/json",
+    "success-messages": [
+      {},
+      {}
+    ],
+    "error-messages" : [
+      {},
+      {}
+    ]
+  },
+  {
+    "_id" : "2",
+    "name": "Get Pair Keys",
+    "endpoint": "/api/v1/rest/user/get-pair-keys",
+    "description": "Endpoint which generates pair of keys",
+    "required-token": true,
+    "parameters": [],
+    "method": "post",
+    "content-type": "application/json",
+    "success-messages": [
+      {},
+      {}
+    ],
+    "error-messages" : [
+      {},
+      {}
+    ]
+  },
+  {
+    "_id" : "3",
+    "name": "Token By Time",
+    "endpoint": "/api/v1/rest/user/get-token-by-time",
+    "description": "Endpoint which generates a token which expires in n time",
+    "required-token": true,
+    "parameters": ["time", "algorithm"],
+    "method": "post",
+    "content-type": "application/json",
+    "success-messages": [
+      {},
+      {}
+    ],
+    "error-messages" : [
+      {},
+      {}
+    ]
+  }, {
+    "_id" : "4",
+    "name": "Validate token",
+    "endpoint": "/api/v1/rest/user/validate-token",
+    "description": "Endpoint which validates a token",
+    "required-token": true,
+    "parameters": ["token", "user"],
+    "method": "post",
+    "content-type": "application/json",
+    "success-messages": [
+      {},
+      {}
+    ],
+    "error-messages" : [
+      {},
+      {}
+    ]
+  },
+  {
+    "_id" : "5",
+    "name": "Get number NIP",
+    "endpoint": "/api/v1/rest/user/get-nip",
+    "description": "Endpoint which returns a NIP with the length passed",
+    "required-token": true,
+    "parameters": ["length"],
+    "method": "post",
+    "content-type": "application/json",
+    "success-messages": [
+      {},
+      {}
+    ],
+    "error-messages" : [
+      {},
+      {}
+    ]
+  },
+  {
+    "_id" : "6",
+    "name": "Get alphanumeric NIP",
+    "endpoint": "/api/v1/rest/user/get-nip-alphanumeric",
+    "description": "Endpoint which returns an alphanumeric NIP with the length passed",
+    "required-token": true,
+    "parameters": ["token", "user"],
+    "method": "post",
+    "content-type": "application/json",
+    "success-messages": [
+      {},
+      {}
+    ],
+    "error-messages" : [
+      {},
+      {}
+    ]
+  },
+  {
+    "_id" : "7",
+    "name": "Get a UUID",
+    "endpoint": "/api/v1/rest/user/get-uuid",
+    "description": "Endpoint which validates a token",
+    "required-token": true,
+    "parameters": ["token", "user"],
+    "method": "post",
+    "content-type": "application/json",
+    "success-messages": [
+      {},
+      {}
+    ],
+    "error-messages" : [
+      {},
+      {}
+    ]
+  },
+  {
+    "_id" : "8",
+    "name": "Sign up",
+    "endpoint": "/api/v1/rest/signup",
+    "description": "Endpoint which register an user into the app",
+    "required-token": true,
+    "parameters": ["username", "name", "lastname", "email"],
+    "method": "post",
+    "content-type": "application/json",
+    "success-messages": [
+      {},
+      {}
+    ],
+    "error-messages" : [
+      {},
+      {}
+    ]
+  },
+  {
+    "_id" : "9",
+    "name": "Forgot password",
+    "endpoint": "/api/v1/rest/user/forgot-password",
+    "description": "Endpoint which validates a token",
+    "required-token": true,
+    "parameters": ["oldPassowrd", "newPassowrd"],
+    "method": "post",
+    "content-type": "application/json",
+    "success-messages": [
+      {},
+      {}
+    ],
+    "error-messages" : [
+      {},
+      {}
+    ]
+  },
+  {
+    "_id" : "10",
+    "name": "Forgot password",
+    "endpoint": "/api/v1/rest/user/forgot-password",
+    "description": "Endpoint who reset the user's password",
+    "required-token": true,
+    "parameters": ["oldPassowrd", "newPassowrd"],
+    "method": "post",
+    "content-type": "application/json",
+    "success-messages": [
+      {},
+      {}
+    ],
+    "error-messages" : [
+      {},
+      {}
+    ]
+  },
+  {
+    "_id" : "11",
+    "name": "Send email",
+    "endpoint": "/api/v1/rest/user/send-email",
+    "description": "Endpoint which validates a token",
+    "required-token": true,
+    "parameters": ["fromEmail", "toEmail", "message"],
+    "method": "post",
+    "content-type": "application/json",
+    "success-messages": [
+      {},
+      {}
+    ],
+    "error-messages" : [
+      {},
+      {}
+    ]
+  }
+]
