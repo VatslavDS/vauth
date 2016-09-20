@@ -1,4 +1,7 @@
 var keypair = require('keypair');
+var crypto = require('crypto'),
+    algorithm = 'aes-256-ctr',
+    password = 'd6F3Efeq';
 
 
 exports.NumericGenerator = function(length) {
@@ -50,6 +53,22 @@ function GAN(length) {
 /*
 **  Helper Functions
 */
+
+exports.ENCRYPT = function(text) {
+  var cipher = crypto.createCipher(algorithm,password)
+  var crypted = cipher.update(text,'utf8','hex')
+  crypted += cipher.final('hex');
+  return crypted;
+}
+
+exports.DECRYPT = function(text) {
+  var decipher = crypto.createDecipher(algorithm,password)
+  var dec = decipher.update(text,'hex','utf8')
+  dec += decipher.final('utf8');
+  return dec;
+}
+
+
 
 var rand = function() {
     return Math.random().toString(36).substr(2); // remove `0.`

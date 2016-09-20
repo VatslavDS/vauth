@@ -3,7 +3,7 @@ var bcrypt   = require('bcrypt-nodejs');
 var Schema = mongoose.Schema;
 
 var SessionSchema = new Schema({
-    token: String,
+    user: String,
     date: {type: Date, default: Date.now }
 });
 
