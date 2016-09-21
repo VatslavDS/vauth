@@ -4,7 +4,7 @@
 <div id="header-wrapper">
 	<div id="header" class="container">
 		<div id="logo">
-			<h1><a href="#">VAuth</a></h1>
+			<h1><a href="#">Tesseract</a></h1>
 			<span>The solution to: <a href="http://templated.co" rel="nofollow">They who can give up essential liberty to obtain a little temporary safety deserve neither liberty nor safety.</a></span>
 		</div>
 		<div id="menu">

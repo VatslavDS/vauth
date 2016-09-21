@@ -4,7 +4,8 @@ var Schema = mongoose.Schema;
 
 var SessionSchema = new Schema({
     user: String,
-    date: {type: Date, default: Date.now }
+    date: {type: Date, default: Date.now },
+    user_agent: String
 });
 
 module.exports = mongoose.model('Session', SessionSchema);
